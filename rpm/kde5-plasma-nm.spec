@@ -60,16 +60,6 @@ Plasma Next applet written in QML for managing network connections
 
 
 
-%package devel
-Summary:    Development files for %{name}
-Group:      Development/Libraries
-Requires:   %{name} = %{version}-%{release}
-
-%description devel
-The %{name}-devel package contains the files necessary to develop applications
-that use %{name}.
-
-
 
 %prep
 %setup -q -n %{name}-%{version}/upstream
@@ -100,24 +90,10 @@ rm -rf %{buildroot}
 
 
 
-
-
-
 %files
 %defattr(-,root,root,-)
-%doc COPYING.LIB README.md
-%{_kf5_libdir}/libKF5ThreadWeaver.so.*
+%{_prefix}/*
 # >> files
 # << files
 
-
-%files devel
-%defattr(-,root,root,-)
-%{_kf5_includedir}/ThreadWeaver/
-%{_kf5_includedir}/plasma-nm_version.h
-%{_kf5_libdir}/libKF5ThreadWeaver.so
-%{_kf5_libdir}/cmake/KF5ThreadWeaver
-%{_datadir}/qt5/mkspecs/modules/*.pri
-# >> files devel
-# << files devel
 

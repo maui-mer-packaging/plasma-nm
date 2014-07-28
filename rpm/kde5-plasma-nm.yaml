@@ -69,19 +69,5 @@ RequiresPostUn:
     - /sbin/ldconfig
 
 Files:
-    - "%doc COPYING.LIB README.md"
-    - "%{_kf5_libdir}/libKF5ThreadWeaver.so.*"
+    - "%{_prefix}/*"
 
-SubPackages:
-    - Name: devel
-      Group: Development/Libraries
-      Summary: Development files for %{name}
-      Description: |
-        The %{name}-devel package contains the files necessary to develop applications
-        that use %{name}.
-      Files:
-          - "%{_kf5_includedir}/ThreadWeaver/"
-          - "%{_kf5_includedir}/plasma-nm_version.h"
-          - "%{_kf5_libdir}/libKF5ThreadWeaver.so"
-          - "%{_kf5_libdir}/cmake/KF5ThreadWeaver"
-          - "%{_datadir}/qt5/mkspecs/modules/*.pri"
