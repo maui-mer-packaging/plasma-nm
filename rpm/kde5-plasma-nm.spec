@@ -28,6 +28,7 @@ BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  pkgconfig(Qt5Test)
 BuildRequires:  pkgconfig(Qt5PrintSupport)
+BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(NetworkManager) >= 0.9.8
 BuildRequires:  kde5-rpm-macros
 BuildRequires:  extra-cmake-modules

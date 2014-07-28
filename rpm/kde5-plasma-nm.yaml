@@ -56,6 +56,7 @@ PkgConfigBR:
     - Qt5Concurrent
     - Qt5Test
     - Qt5PrintSupport
+    - Qt5Quick
     - NetworkManager >= 0.9.8
     #- ModemManager >= 1.0.0
 Requires:
