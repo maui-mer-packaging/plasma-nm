@@ -1,0 +1,5 @@
+from Config import *
+addFilter("devel-file-in-non-devel-package")
+addFilter("no-changelogname-tag")
+addFilter("library-without-ldconfig-postin")
+addFilter("library-without-ldconfig-postun")

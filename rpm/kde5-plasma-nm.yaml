@@ -1,0 +1,88 @@
+Name         : kde5-plasma-nm
+Version      : 5.0.0
+Release      : 1
+Group        : System/Base
+License      : LGPLv2+ and GPLv2+
+Summary      : Plasma Next applet written in QML for managing network connections
+Description  : |
+  Plasma Next applet written in QML for managing network connections
+URL          : http://www.kde.org
+SetupOptions : -q -n %{name}-%{version}/upstream
+
+Sources:
+    - "%{name}-%{version}.tar.xz"
+
+RpmLintIgnore:
+    - devel-file-in-non-devel-package
+    - no-changelogname-tag
+    - library-without-ldconfig-postin
+    - library-without-ldconfig-postun
+
+Configure    : none
+Builder      : none
+
+PkgBR:
+    - kde5-rpm-macros
+    - extra-cmake-modules
+    - qt5-tools
+    - kf5-ki18n-devel
+    - kf5-kwindowsystem-devel
+    - kf5-kservice-devel
+    - kf5-kcompletion-devel
+    - kf5-kwidgetsaddons-devel
+    - kf5-kio-devel
+    - kf5-kcoreaddons-devel
+    - kf5-kwallet-devel
+    - kf5-kitemviews-devel
+    - kf5-kxmlgui-devel
+    - kf5-kconfigwidgets-devel
+    - kf5-kiconthemes-devel
+    - kf5-solid-devel
+    - kf5-kdbusaddons-devel
+    - kf5-knotifications-devel
+    - kf5-plasma-devel
+    - kf5-kdeclarative-devel
+    - kf5-kinit-devel
+    - kf5-kdelibs4support-devel
+    #- kde5-modemmanagerqt-devel
+    - kde5-networkmanagerqt-devel
+PkgConfigBR:
+    - Qt5Core
+    - Qt5DBus
+    - Qt5Xml
+    - Qt5Network
+    - Qt5Gui
+    - Qt5Widgets
+    - Qt5Concurrent
+    - Qt5Test
+    - Qt5PrintSupport
+    - NetworkManager >= 0.9.8
+    - ModemManager >= 1.0.0
+Requires:
+    - kde5-filesystem
+    - NetworkManager >= 0.9.8
+    - kde5-networkmanagerqt
+
+
+RequiresPost:
+    - /sbin/ldconfig
+RequiresPostUn:
+    - /sbin/ldconfig
+
+Files:
+    - "%doc COPYING.LIB README.md"
+    - "%{_kf5_libdir}/libKF5ThreadWeaver.so.*"
+
+SubPackages:
+    - Name: devel
+      Group: Development/Libraries
+      Summary: Development files for %{name}
+      Description: |
+        The %{name}-devel package contains the files necessary to develop applications
+        that use %{name}.
+      Files:
+          - "%{_kf5_includedir}/ThreadWeaver/"
+          - "%{_kf5_includedir}/plasma-nm_version.h"
+          - "%{_kf5_libdir}/libKF5ThreadWeaver.so"
+          - "%{_kf5_libdir}/cmake/KF5ThreadWeaver"
+          - "%{_datadir}/qt5/mkspecs/modules/*.pri"
