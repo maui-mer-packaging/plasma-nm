@@ -17,7 +17,6 @@ Source100:  kde5-plasma-nm.yaml
 Source101:  kde5-plasma-nm-rpmlintrc
 Requires:   kde5-filesystem
 Requires:   NetworkManager >= 0.9.8
-Requires:   kde5-networkmanagerqt
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 BuildRequires:  pkgconfig(Qt5Core)
@@ -30,7 +29,6 @@ BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  pkgconfig(Qt5Test)
 BuildRequires:  pkgconfig(Qt5PrintSupport)
 BuildRequires:  pkgconfig(NetworkManager) >= 0.9.8
-BuildRequires:  pkgconfig(ModemManager) >= 1.0.0
 BuildRequires:  kde5-rpm-macros
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
@@ -53,7 +51,7 @@ BuildRequires:  kf5-plasma-devel
 BuildRequires:  kf5-kdeclarative-devel
 BuildRequires:  kf5-kinit-devel
 BuildRequires:  kf5-kdelibs4support-devel
-BuildRequires:  kde5-networkmanagerqt-devel
+BuildRequires:  kde5-libnm-qt-devel
 
 
 %description

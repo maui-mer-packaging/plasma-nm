@@ -45,7 +45,7 @@ PkgBR:
     - kf5-kinit-devel
     - kf5-kdelibs4support-devel
     #- kde5-modemmanagerqt-devel
-    - kde5-networkmanagerqt-devel
+    - kde5-libnm-qt-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -57,12 +57,10 @@ PkgConfigBR:
     - Qt5Test
     - Qt5PrintSupport
     - NetworkManager >= 0.9.8
-    - ModemManager >= 1.0.0
+    #- ModemManager >= 1.0.0
 Requires:
     - kde5-filesystem
     - NetworkManager >= 0.9.8
-    - kde5-networkmanagerqt
-
 
 RequiresPost:
     - /sbin/ldconfig
