@@ -30,6 +30,7 @@ BuildRequires:  pkgconfig(Qt5Test)
 BuildRequires:  pkgconfig(Qt5PrintSupport)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(NetworkManager) >= 0.9.8
+BuildRequires:  pkgconfig(ModemManager) >= 1.0.0
 BuildRequires:  kde5-rpm-macros
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
@@ -52,6 +53,7 @@ BuildRequires:  kf5-plasma-devel
 BuildRequires:  kf5-kdeclarative-devel
 BuildRequires:  kf5-kinit-devel
 BuildRequires:  kf5-kdelibs4support-devel
+BuildRequires:  kf5-libmm-qt-devel
 BuildRequires:  kde5-libnm-qt-devel
 
 
