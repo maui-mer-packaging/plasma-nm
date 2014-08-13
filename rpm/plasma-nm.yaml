@@ -1,4 +1,4 @@
-Name         : kde5-plasma-nm
+Name         : plasma-nm
 Version      : 5.0.0
 Release      : 1
 Group        : System/Base
@@ -22,30 +22,30 @@ Configure    : none
 Builder      : none
 
 PkgBR:
-    - kde5-rpm-macros
+    - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - kf5-ki18n-devel
-    - kf5-kwindowsystem-devel
-    - kf5-kservice-devel
-    - kf5-kcompletion-devel
-    - kf5-kwidgetsaddons-devel
-    - kf5-kio-devel
-    - kf5-kcoreaddons-devel
-    - kf5-kwallet-devel
-    - kf5-kitemviews-devel
-    - kf5-kxmlgui-devel
-    - kf5-kconfigwidgets-devel
-    - kf5-kiconthemes-devel
-    - kf5-solid-devel
-    - kf5-kdbusaddons-devel
-    - kf5-knotifications-devel
-    - kf5-plasma-devel
-    - kf5-kdeclarative-devel
-    - kf5-kinit-devel
-    - kf5-kdelibs4support-devel
-    - kf5-libmm-qt-devel
-    - kde5-libnm-qt-devel
+    - ki18n-devel
+    - kwindowsystem-devel
+    - kservice-devel
+    - kcompletion-devel
+    - kwidgetsaddons-devel
+    - kio-devel
+    - kcoreaddons-devel
+    - kwallet-devel
+    - kitemviews-devel
+    - kxmlgui-devel
+    - kconfigwidgets-devel
+    - kiconthemes-devel
+    - solid-devel
+    - kdbusaddons-devel
+    - knotifications-devel
+    - plasma-devel
+    - kdeclarative-devel
+    - kinit-devel
+    - kdelibs4support-devel
+    - libmm-qt-devel
+    - libnm-qt-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -60,7 +60,7 @@ PkgConfigBR:
     - NetworkManager >= 0.9.8
     - ModemManager >= 1.0.0
 Requires:
-    - kde5-filesystem
+    - kf5-filesystem
     - NetworkManager >= 0.9.8
 
 RequiresPost:
@@ -70,4 +70,3 @@ RequiresPostUn:
 
 Files:
     - "%{_prefix}/*"
-
