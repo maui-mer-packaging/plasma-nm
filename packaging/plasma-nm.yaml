@@ -7,7 +7,6 @@ Summary      : Plasma Next applet written in QML for managing network connection
 Description  : |
   Plasma Next applet written in QML for managing network connections
 URL          : http://www.kde.org
-SetupOptions : -q -n %{name}-%{version}/upstream
 
 Sources:
     - "%{name}-%{version}.tar.xz"
