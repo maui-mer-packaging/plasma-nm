@@ -9,7 +9,7 @@ Name:       plasma-nm
 # << macros
 
 Summary:    Plasma Next applet written in QML for managing network connections
-Version:    5.0.0
+Version:    5.1.0
 Release:    1
 Group:      System/Base
 License:    LGPLv2+ and GPLv2+
